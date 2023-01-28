@@ -38,3 +38,4 @@ build() {
 package() {
     DESTDIR="$pkgdir" cmake --install build
 }
+source=("git+https://github.com/KDE/${pkgname%-git}#branch=kf5")
